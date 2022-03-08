@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Level1 = () => {
+
+    const [nameTag, updateNameTag] = useState([])
+
     return(
         <div>
             <h1>Level 1</h1>
@@ -11,7 +14,7 @@ const Level1 = () => {
 
                 <div className='level1-grid-card'>
                     <img src="https://natashaskitchen.com/wp-content/uploads/2020/05/Vanilla-Cupcakes-3.jpg" alt="cupcake"></img>
-                    <h3>Sprinkle Cupcake</h3>
+                    {typeof(nameTag) == "object" ? <h3>Sprinkle Cupcake</h3> : <h3>DEEZ</h3> }
                 </div>
 
                 <div className='level1-grid-card'>
