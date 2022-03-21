@@ -4,6 +4,7 @@ import Level1 from "./components/Level1"
 import Level2 from "./components/Level2"
 import Level3 from "./components/Level3"
 import Level4 from "./components/Level4"
+import Level5 from "./components/Level5"
 import { Routes, Route, Link } from "react-router-dom";
 
 
@@ -17,6 +18,7 @@ function App() {
         <Link to="/Level2" style={{padding: "0.5rem"}} element={<Level2 />}>Level 2</Link>
         <Link to="/Level3" style={{padding: "0.5rem"}} element={<Level3 />}>Level 3</Link>
         <Link to="/Level4" style={{padding: "0.5rem"}} element={<Level4 />}>Level 4</Link>
+        <Link to="/Level5" style={{padding: "0.5rem"}} element={<Level4 />}>Level 5</Link>
       </nav>
 
       <Routes>
@@ -25,6 +27,7 @@ function App() {
         <Route path="/Level2" element={<Level2 />} />
         <Route path="/Level3" element={<Level3 />} />
         <Route path="/Level4" element={<Level4 />} />
+        <Route path="/Level5" element={<Level5 />} />
         {/* this is what actually leads to correct module*/}
 
 
